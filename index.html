@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>A.K.M.A. Sobur Khan | Software Engineering Student & Web Developer</title>
+  <meta name="title" content="A.K.M.A. Sobur Khan | Portfolio — Daffodil International University">
+  <meta name="description" content="Personal portfolio of A.K.M.A. Sobur Khan, undergraduate Software Engineering student at Daffodil International University (DIU). Coursework: SE235 Desktop & Web Programming.">
+  <meta name="author" content="A.K.M.A. Sobur Khan">
+  <meta name="theme-color" content="#0D9488">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Academic Notice Banner -->
+  <aside class="top-notice-bar" aria-label="Course Banner">
+    <span>🎓 Daffodil International University</span>
+    <span>•</span>
+    <span>Course Assignment: <strong class="course-badge">SE235: Desktop &amp; Web Programming</strong></span>
+    <span>•</span>
+    <span>Department of Software Engineering (FSIT)</span>
+  </aside>
+
+  <!-- Sticky Site Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Monogram Brand Logo -->
+      <a href="#hero" class="brand-link" aria-label="A.K.M.A. Sobur Khan Home">
+        <div class="brand-monogram">SK</div>
+        <div class="brand-meta">
+          <span class="brand-name">A.K.M.A. Sobur Khan</span>
+          <span class="brand-title">Software Engineering @ DIU</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Controls -->
+      <div class="nav-actions">
+        <!-- Resume Trigger -->
+        <button type="button" class="btn btn-outline btn-sm open-resume-btn" aria-label="View Curriculum Vitae">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          CV / Resume
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch theme mode">
+          <!-- Moon Icon (for Light Mode -> Dark) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (for Dark Mode -> Light) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button type="button" class="mobile-menu-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         HERO & PROFILE SECTION
+         ==================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Introduction & Narrative -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-status-row">
+            <span class="badge badge-live">
+              <span class="pulse-dot"></span>
+              Open to Summer 2027 Internships
+            </span>
+            <span class="badge">
+              📍 Dhaka, BD (UTC+6) • <span id="dhaka-live-clock">--:--:--</span>
+            </span>
+          </div>
+
+          <span class="hero-eyebrow">Hello, World! I am</span>
+          <h1 class="hero-title">A.K.M.A. Sobur Khan</h1>
+          <p class="hero-tagline">
+            Undergraduate Software Engineering Student &amp; <span class="highlight-text">Web Systems Builder</span>
+          </p>
+
+          <p class="hero-bio">
+            Studying at <strong>Daffodil International University</strong>. I build clean, accessible web applications and desktop tools rooted in solid computer science fundamentals—from algorithms in C++ and Python to resilient DOM architectures with vanilla JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <button type="button" class="btn btn-outline open-resume-btn">Curriculum Vitae</button>
+          </div>
+
+          <!-- Social Links Strip -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <!-- GitHub -->
+            <a href="https://github.com/sobur-khan" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/sobur-khan" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:soburkhan.swe@gmail.com" class="social-link" aria-label="Send direct email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.712 9.518-7.712v11.817h-19.036z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Profile Visual & Now Terminal -->
+        <div class="hero-visual reveal-on-scroll delay-1">
+          <div class="avatar-wrapper">
+            <div class="avatar-frame">
+              <div class="avatar-inner">
+                <img src="assets/avatar.svg" alt="A.K.M.A. Sobur Khan Portrait Illustration" class="avatar-img" width="320" height="320">
+              </div>
+            </div>
+
+            <!-- Floating Micro-Badges -->
+            <div class="floating-badge floating-badge-top" aria-hidden="true">
+              <span>⭐</span>
+              <span>4x Board GPA 5.00</span>
+            </div>
+            <div class="floating-badge floating-badge-bottom" aria-hidden="true">
+              <span>💡</span>
+              <span>DIU Skillup Club</span>
+            </div>
+          </div>
+
+          <!-- Interactive "Now" Terminal Card -->
+          <div class="now-terminal" aria-label="Current status widget">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+              </div>
+              <span class="terminal-title">now.config.json</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-key">"semester":</span>
+                <span class="terminal-val">"5th Sem • B.Sc. in SWE"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"course":</span>
+                <span class="terminal-val">"SE235: Desktop &amp; Web Prog"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"building":</span>
+                <span class="terminal-val">"Campus lab collision tool"</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">"exploring":</span>
+                <span class="terminal-val">"Clean architecture &amp; ASTs"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 01: ABOUT ME
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">01. About Me</span>
+          <h2 class="section-title">The Story Behind the Code</h2>
+          <p class="section-subtitle">
+            An undergraduate software engineering student driven by curiosity, foundational principles, and building tools that genuinely assist people.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-text reveal-on-scroll">
+            <p>
+              My journey into computing started with a fundamental curiosity: <em>how does code genuinely interact with memory and the operating system?</em> Instead of rushing toward high-level frameworks, I began my university studies by digging into <strong>C and C++</strong>. Working with memory addresses, pointers, and manual data structures gave me an enduring appreciation for computational efficiency and clean architectural boundaries.
+            </p>
+
+            <div class="about-quote">
+              "Great software engineers aren't defined by the number of frameworks they know; they are defined by how deeply they understand fundamentals and how cleanly they can solve human problems."
+            </div>
+
+            <p>
+              At <strong>Daffodil International University (DIU)</strong>, as part of <strong>SE235: Desktop &amp; Web Programming</strong>, I channeled that foundational discipline into modern web development. Building complete applications with semantic HTML5, pure CSS3, and vanilla ES6+ JavaScript demonstrated that web programming does not require heavy build chains or bloated bundles to be dynamic, elegant, and lightning-fast.
+            </p>
+
+            <p>
+              Outside of the code editor, I actively contribute to campus life through the <strong>DIU Skillup Club</strong>, conducting peer study sessions on Git collaboration and mentoring first-year students through pointers and algorithmic recursion. When I take a break from the keyboard, you will find me playing competitive chess, reading software architecture essays, or sketching minimalist interface wireframes.
+            </p>
+          </div>
+
+          <!-- Right: Snapshot & Quick Contact -->
+          <div class="about-sidebar reveal-on-scroll delay-1">
+            <div class="card">
+              <h3 class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Developer Snapshot
+              </h3>
+              <div class="spec-list">
+                <div class="spec-item">
+                  <span class="spec-label">Degree</span>
+                  <span class="spec-value">B.Sc. in Software Eng.</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Institution</span>
+                  <span class="spec-value">Daffodil Int. University</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Location</span>
+                  <span class="spec-value">Dhaka, Bangladesh</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Academic Track</span>
+                  <span class="spec-value">4x Board GPA 5.00</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Club Affiliation</span>
+                  <span class="spec-value">DIU Skillup Club</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Languages</span>
+                  <span class="spec-value">Bengali, English</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Copy Email Component -->
+            <div class="quick-connect-card">
+              <div class="quick-connect-info">
+                <span class="quick-connect-label">Direct Communication</span>
+                <span class="quick-connect-email">soburkhan.swe@gmail.com</span>
+              </div>
+              <button type="button" class="copy-btn copy-email-trigger" data-email="soburkhan.swe@gmail.com" aria-label="Copy email address to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Stat Counters -->
+        <div class="stats-grid reveal-on-scroll">
+          <div class="stat-item">
+            <div class="stat-number">4x</div>
+            <div class="stat-label">National Board GPA 5.00</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Lab &amp; Web Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Hours Peer Tutoring</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Pure Web Standards</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 02: SKILLS & TECHNICAL TOOLKIT
+         ==================================================================== -->
+    <section class="section" id="skills" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">02. Technical Toolkit</span>
+          <h2 class="section-title">Skills Grounded in Fundamentals</h2>
+          <p class="section-subtitle">
+            Categorized strictly by authentic coursework, lab benchmarks, and practical implementation. No arbitrary 90% progress bars.
+          </p>
+        </header>
+
+        <!-- Dynamic Filter & Search Toolbar -->
+        <div class="skills-controls reveal-on-scroll">
+          <div class="skill-search-box">
+            <svg class="skill-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="skill-search-input" class="skill-search-input" placeholder="Type to filter skills (e.g., C++, DOM, Git)..." aria-label="Search skills">
+          </div>
+          <span class="skills-count-info" id="skills-match-count">Showing all competencies</span>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-grid">
+          <!-- 1. Core Languages -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">💻</div>
+              <h3 class="category-title">Core Languages</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <div class="skill-pill">
+                <span class="skill-name">C / C++</span>
+                <span class="skill-tier">Pointers &amp; Memory</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-tier">DOM &amp; Async Architecture</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-tier">Scripting &amp; Automation</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">SQL (MySQL)</span>
+                <span class="skill-tier">Schema Design &amp; Queries</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Web Technologies -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">🌐</div>
+              <h3 class="category-title">Web Technologies</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <div class="skill-pill">
+                <span class="skill-name">Semantic HTML5</span>
+                <span class="skill-tier">WCAG 2.1 AA Accessibility</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">CSS3 Layouts</span>
+                <span class="skill-tier">Grid, Flexbox, Variables</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Vanilla DOM Scripting</span>
+                <span class="skill-tier">Event Delegation &amp; State</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Responsive Design</span>
+                <span class="skill-tier">Mobile-First Viewports</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Fetch &amp; REST APIs</span>
+                <span class="skill-tier">JSON Data Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tools & Workflow -->
+          <div class="skill-category-card reveal-on-scroll delay-2">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">🛠️</div>
+              <h3 class="category-title">Developer Tools</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <div class="skill-pill">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-tier">Branching &amp; Pull Requests</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-tier">Workflow Optimization</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Chrome DevTools</span>
+                <span class="skill-tier">Network &amp; Performance Audit</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Command Line / Bash</span>
+                <span class="skill-tier">Terminal Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. CS Fundamentals -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">📐</div>
+              <h3 class="category-title">Computer Science Core</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <div class="skill-pill">
+                <span class="skill-name">Data Structures</span>
+                <span class="skill-tier">Arrays, Trees, Hash Maps</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Algorithms</span>
+                <span class="skill-tier">Sorting, Binary Search, Big-O</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">OOP Principles</span>
+                <span class="skill-tier">Inheritance &amp; Polymorphism</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">SDLC Methodologies</span>
+                <span class="skill-tier">Agile &amp; Requirements</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Collaborative & Soft Skills -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">🤝</div>
+              <h3 class="category-title">Collaborative &amp; Soft Skills</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <div class="skill-pill">
+                <span class="skill-name">Peer Mentoring</span>
+                <span class="skill-tier">Lab Assistance &amp; Tutoring</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Technical Documentation</span>
+                <span class="skill-tier">Clear Reports &amp; READMEs</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Club Leadership</span>
+                <span class="skill-tier">DIU Skillup Workshop Lead</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Analytical Thinking</span>
+                <span class="skill-tier">Structured Problem Breakdown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03: ACADEMIC BACKGROUND
+         ==================================================================== -->
+    <section class="section" id="academics">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">03. Academic Foundation</span>
+          <h2 class="section-title">Formal Software Engineering Education</h2>
+          <p class="section-subtitle">
+            Cultivating rigorous algorithmic thinking, software lifecycle methodologies, and web engineering principles at Daffodil International University.
+          </p>
+        </header>
+
+        <div class="academics-container">
+          <!-- University Showcase Card -->
+          <div class="uni-hero-card reveal-on-scroll">
+            <div class="uni-seal-badge" aria-hidden="true">DIU</div>
+            <div class="uni-info">
+              <h3 class="uni-degree">Bachelor of Science in Software Engineering (B.Sc. SWE)</h3>
+              <div class="uni-name">Daffodil International University (DIU), Dhaka</div>
+              <div class="uni-dept">Faculty of Science &amp; Information Technology (FSIT) • 2023 – Present</div>
+            </div>
+            <div class="uni-status-badge">
+              <span class="badge badge-amber">Undergraduate Degree</span>
+            </div>
+          </div>
+
+          <!-- Relevant Coursework Grid -->
+          <div>
+            <h3 class="coursework-section-title reveal-on-scroll">
+              <span>📚</span> Relevant Core Coursework
+            </h3>
+            <div class="coursework-grid">
+              <!-- Featured Course: SE235 -->
+              <div class="course-card current-course reveal-on-scroll">
+                <span class="course-code">SE235</span>
+                <h4 class="course-title">Desktop &amp; Web Programming</h4>
+                <p class="course-desc">
+                  Advanced exploration of client-side web architectures, semantic document structuring, CSS layouts, DOM event systems, client-side data persistence, and desktop GUI integrations.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">HTML5</span>
+                  <span class="course-tag">CSS3</span>
+                  <span class="course-tag">Vanilla JS</span>
+                  <span class="course-tag">DOM APIs</span>
+                </div>
+              </div>
+
+              <!-- Data Structures & Algorithms -->
+              <div class="course-card reveal-on-scroll delay-1">
+                <span class="course-code">CSE213</span>
+                <h4 class="course-title">Data Structures &amp; Algorithms</h4>
+                <p class="course-desc">
+                  Time and space complexity profiling (Big-O), recursion, sorting algorithms, stacks, queues, linked structures, binary search trees, and dynamic programming foundations.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">C++</span>
+                  <span class="course-tag">Complexity Analysis</span>
+                  <span class="course-tag">Optimization</span>
+                </div>
+              </div>
+
+              <!-- Object-Oriented Programming -->
+              <div class="course-card reveal-on-scroll delay-2">
+                <span class="course-code">CSE123</span>
+                <h4 class="course-title">Object-Oriented Programming</h4>
+                <p class="course-desc">
+                  Design patterns, encapsulation, class inheritance, polymorphism, abstract interfaces, exception handling, and modular component design.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">OOP</span>
+                  <span class="course-tag">C++</span>
+                  <span class="course-tag">Design Patterns</span>
+                </div>
+              </div>
+
+              <!-- Database Management Systems -->
+              <div class="course-card reveal-on-scroll">
+                <span class="course-code">SWE224</span>
+                <h4 class="course-title">Database Management Systems</h4>
+                <p class="course-desc">
+                  Relational database schema modeling, ER diagramming, SQL querying, indexing, transaction ACID properties, and 3NF normalization.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">MySQL</span>
+                  <span class="course-tag">Relational Modeling</span>
+                  <span class="course-tag">SQL</span>
+                </div>
+              </div>
+
+              <!-- Software Requirements Engineering -->
+              <div class="course-card reveal-on-scroll delay-1">
+                <span class="course-code">SWE211</span>
+                <h4 class="course-title">Software Requirements Engineering</h4>
+                <p class="course-desc">
+                  Stakeholder elicitation, functional &amp; non-functional specification, UML use cases, user story breakdown, and IEEE SRS documentation standards.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">SRS</span>
+                  <span class="course-tag">UML</span>
+                  <span class="course-tag">Agile</span>
+                </div>
+              </div>
+
+              <!-- Discrete Mathematics -->
+              <div class="course-card reveal-on-scroll delay-2">
+                <span class="course-code">MAT112</span>
+                <h4 class="course-title">Discrete Mathematics</h4>
+                <p class="course-desc">
+                  Propositional logic, set theory, combinatorics, graph theory, recurrence relations, and mathematical proofs vital for algorithmic verification.
+                </p>
+                <div class="course-tags">
+                  <span class="course-tag">Graph Theory</span>
+                  <span class="course-tag">Proofs</span>
+                  <span class="course-tag">Logic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 04: PROJECTS SHOWCASE
+         ==================================================================== -->
+    <section class="section" id="projects" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">04. Selected Works</span>
+          <h2 class="section-title">Practical Software &amp; Web Applications</h2>
+          <p class="section-subtitle">
+            Focused on solving tangible problems through clean code, user-centered design, and robust client-side architecture. Click any project to inspect the case study.
+          </p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <div class="projects-filter-bar reveal-on-scroll" role="tablist" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+          <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Applications (2)</button>
+          <button type="button" class="filter-btn" data-filter="academic" role="tab" aria-selected="false">Academic Tools (1)</button>
+          <button type="button" class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Algorithms &amp; CLI (1)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: DIU Campus Room Scheduler -->
+          <article class="project-card reveal-on-scroll" data-category="web">
+            <div class="project-preview-header">
+              <span class="project-category-badge">Web Application</span>
+              <div class="project-preview-mockup" aria-hidden="true">
+                <div class="mockup-topbar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <span style="color: var(--accent-primary); font-weight: bold;">[DIU Lab Scheduler v1.0]</span>
+                  <div class="mockup-skeleton-bar w-90"></div>
+                  <div class="mockup-skeleton-bar w-75"></div>
+                  <div class="mockup-skeleton-bar w-50"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">DIU Campus Room &amp; Lab Scheduler</h3>
+              
+              <div class="project-problem-solution">
+                <div class="ps-item">
+                  <span class="ps-label">Problem:</span>
+                  Timetable collisions and uncoordinated lab bookings disrupt student project work.
+                </div>
+                <div class="ps-item">
+                  <span class="ps-label">Solution:</span>
+                  Interactive timetable planner with client-side slot collision warnings and bookmarking.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3 Grid</span>
+                <span class="project-tag">Vanilla JS</span>
+                <span class="project-tag">LocalStorage</span>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-project-target="project-scheduler">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sobur-khan/diu-room-scheduler" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: DIU CGPA & Academic Credit Forecaster -->
+          <article class="project-card reveal-on-scroll delay-1" data-category="academic">
+            <div class="project-preview-header">
+              <span class="project-category-badge">Academic Tool</span>
+              <div class="project-preview-mockup" aria-hidden="true">
+                <div class="mockup-topbar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <span style="color: var(--accent-warm); font-weight: bold;">[CGPA Calculator &amp; Audit]</span>
+                  <div class="mockup-skeleton-bar w-75"></div>
+                  <div class="mockup-skeleton-bar w-90"></div>
+                  <div class="mockup-skeleton-bar w-50"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">DIU CGPA &amp; Academic Credit Forecaster</h3>
+              
+              <div class="project-problem-solution">
+                <div class="ps-item">
+                  <span class="ps-label">Problem:</span>
+                  Manual GPA projections across uneven semester credit hours are prone to arithmetic errors.
+                </div>
+                <div class="ps-item">
+                  <span class="ps-label">Solution:</span>
+                  Fast reactive calculator with target goal forecasting and printable summary stylesheets.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">JavaScript (ES6)</span>
+                <span class="project-tag">CSS Flexbox</span>
+                <span class="project-tag">Dynamic DOM</span>
+                <span class="project-tag">Print CSS</span>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-project-target="project-cgpa">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sobur-khan/diu-cgpa-calculator" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: DevNotes Code Snippet Catalog -->
+          <article class="project-card reveal-on-scroll delay-2" data-category="web">
+            <div class="project-preview-header">
+              <span class="project-category-badge">Web Application</span>
+              <div class="project-preview-mockup" aria-hidden="true">
+                <div class="mockup-topbar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <span style="color: var(--accent-primary); font-weight: bold;">[DevNotes: Snippets Offline]</span>
+                  <div class="mockup-skeleton-bar w-50"></div>
+                  <div class="mockup-skeleton-bar w-90"></div>
+                  <div class="mockup-skeleton-bar w-75"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">DevNotes: Minimalist Snippet Catalog</h3>
+              
+              <div class="project-problem-solution">
+                <div class="ps-item">
+                  <span class="ps-label">Problem:</span>
+                  Remembering boilerplate patterns across C++, Python, and JS during timed lab exams is tough.
+                </div>
+                <div class="ps-item">
+                  <span class="ps-label">Solution:</span>
+                  Offline-first snippet notebook with instant keyboard search and 1-click clipboard copy.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">Vanilla JS</span>
+                <span class="project-tag">CSS Custom Tokens</span>
+                <span class="project-tag">Clipboard API</span>
+                <span class="project-tag">JSON I/O</span>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-project-target="project-snippets">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sobur-khan/devnotes-snippets" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Student Task & Milestone Tracker CLI -->
+          <article class="project-card reveal-on-scroll" data-category="systems">
+            <div class="project-preview-header">
+              <span class="project-category-badge">Algorithms &amp; CLI</span>
+              <div class="project-preview-mockup" aria-hidden="true">
+                <div class="mockup-topbar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <span style="color: var(--accent-alert); font-weight: bold;">$ task-tracker --report</span>
+                  <div class="mockup-skeleton-bar w-90"></div>
+                  <div class="mockup-skeleton-bar w-50"></div>
+                  <div class="mockup-skeleton-bar w-75"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Task &amp; Milestone Tracker CLI</h3>
+              
+              <div class="project-problem-solution">
+                <div class="ps-item">
+                  <span class="ps-label">Problem:</span>
+                  Bloated desktop productivity applications demand heavy RAM and cloud logins.
+                </div>
+                <div class="ps-item">
+                  <span class="ps-label">Solution:</span>
+                  Lightweight terminal tool built with C++ and Python using binary search file records.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Python Scripting</span>
+                <span class="project-tag">File Streams</span>
+                <span class="project-tag">Binary Search</span>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-project-target="project-tracker">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sobur-khan/terminal-task-tracker" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 05: WORK EXPERIENCE & CAMPUS LEADERSHIP
+         ==================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">05. Experience &amp; Leadership</span>
+          <h2 class="section-title">Community Involvement &amp; Applied Practice</h2>
+          <p class="section-subtitle">
+            Bridging technical knowledge with interpersonal communication through peer mentoring, workshop facilitation, and freelance web delivery.
+          </p>
+        </header>
+
+        <div class="timeline">
+          <!-- Item 1: DIU Skillup Club -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Active Member &amp; Workshop Facilitator</h3>
+                <span class="timeline-period">2025 – Present</span>
+              </div>
+              <div class="timeline-org">
+                <span>🏢</span>
+                <span>DIU Skillup Club • Daffodil International University, Dhaka</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Co-organized and conducted hands-on technical workshops introducing junior students to Git version control, GitHub pull request workflows, and merge conflict resolution.</li>
+                <li>Facilitated weekly study groups focusing on modern semantic HTML, CSS Grid architectures, and clean code formatting practices.</li>
+                <li>Collaborated with executive club leaders to manage logistics and mentor participants during campus hackathons.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: Peer Tutor -->
+          <div class="timeline-item reveal-on-scroll delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Computer Science &amp; Mathematics Peer Tutor</h3>
+                <span class="timeline-period">2024 – Present</span>
+              </div>
+              <div class="timeline-org">
+                <span>📖</span>
+                <span>Independent &amp; Campus Study Circles • Dhaka, Bangladesh</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Provided structured 1-on-1 and small group academic mentoring to 20+ first-year students in Structured Programming (C/C++) and Discrete Mathematics.</li>
+                <li>Helped students dissect complex topics such as pointer arithmetic, dynamic memory allocation, recursive functions, and graph traversal.</li>
+                <li>Created concise diagnostic problem sets and code walkthroughs to improve lab examination pass rates and confidence.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: Freelance Web Assistant -->
+          <div class="timeline-item reveal-on-scroll delay-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Freelance Frontend Assistant</h3>
+                <span class="timeline-period">2025 – Present</span>
+              </div>
+              <div class="timeline-org">
+                <span>💻</span>
+                <span>Client &amp; Community Web Engagements • Remote / Hybrid</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed and developed responsive, lightweight static web landing pages for local community initiatives and student startup projects.</li>
+                <li>Enforced mobile-first responsive guidelines and validated WCAG color contrast standards, achieving 98+ Google Lighthouse performance scores.</li>
+                <li>Restructured legacy non-semantic markup into clean, accessible HTML5 with zero runtime framework dependencies.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 06: CERTIFICATIONS & ACHIEVEMENTS
+         ==================================================================== -->
+    <section class="section" id="achievements" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">06. Achievements &amp; Milestones</span>
+          <h2 class="section-title">Recognition of Academic Excellence</h2>
+          <p class="section-subtitle">
+            A testament to disciplined study habits, academic perseverance, and competitive technical curiosity.
+          </p>
+        </header>
+
+        <div class="achievements-grid">
+          <!-- H.S.C Card -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-grade-badge">GPA 5.00</div>
+            <h3 class="achievement-title">Higher Secondary Certificate (H.S.C)</h3>
+            <div class="achievement-authority">Science Group • Dhaka Education Board</div>
+            <p class="achievement-desc">
+              Achieved the highest possible academic grade across physics, chemistry, higher mathematics, and English examinations.
+            </p>
+            <div class="achievement-honor-flag">
+              <span>⭐</span> Perfect Academic Distinction
+            </div>
+          </div>
+
+          <!-- S.S.C Card -->
+          <div class="achievement-card reveal-on-scroll delay-1">
+            <div class="achievement-grade-badge">GPA 5.00</div>
+            <h3 class="achievement-title">Secondary School Certificate (S.S.C)</h3>
+            <div class="achievement-authority">Science Group • Dhaka Education Board</div>
+            <p class="achievement-desc">
+              Graduated with top honors, establishing early foundations in analytical mathematics and scientific problem solving.
+            </p>
+            <div class="achievement-honor-flag">
+              <span>⭐</span> Perfect Academic Distinction
+            </div>
+          </div>
+
+          <!-- J.S.C Card -->
+          <div class="achievement-card reveal-on-scroll delay-2">
+            <div class="achievement-grade-badge">GPA 5.00</div>
+            <h3 class="achievement-title">Junior School Certificate (J.S.C)</h3>
+            <div class="achievement-authority">Dhaka Education Board</div>
+            <p class="achievement-desc">
+              Recognized with top distinction in secondary education gateway assessments for sustained performance.
+            </p>
+            <div class="achievement-honor-flag">
+              <span>⭐</span> Top National Tier
+            </div>
+          </div>
+
+          <!-- P.S.C Card -->
+          <div class="achievement-card reveal-on-scroll delay-3">
+            <div class="achievement-grade-badge">GPA 5.00</div>
+            <h3 class="achievement-title">Primary School Certificate (P.S.C)</h3>
+            <div class="achievement-authority">Dhaka Education Board</div>
+            <p class="achievement-desc">
+              Completed primary education with a perfect GPA 5.00, initiating a 4-tier unbroken national academic record.
+            </p>
+            <div class="achievement-honor-flag">
+              <span>⭐</span> 4th Consecutive Tier
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07: CONTACT & CONNECT
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">07. Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">
+            Whether you would like to discuss software engineering, inquire about course projects, or explore internship opportunities, my inbox is open!
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-info reveal-on-scroll">
+            <div class="contact-highlight-card">
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                Available for Summer 2027 Opportunities
+              </h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                I am actively seeking software engineering internship positions, undergraduate research opportunities, and collaborative open-source projects where I can contribute disciplined problem-solving and web engineering skills.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <!-- Method 1: Email -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-method-detail">
+                  <span class="contact-method-label">Direct Email</span>
+                  <span class="contact-method-val">
+                    <a href="mailto:soburkhan.swe@gmail.com">soburkhan.swe@gmail.com</a>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Method 2: Location -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-method-detail">
+                  <span class="contact-method-label">Location</span>
+                  <span class="contact-method-val">Dhaka, Bangladesh (UTC+6)</span>
+                </div>
+              </div>
+
+              <!-- Method 3: GitHub -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-method-detail">
+                  <span class="contact-method-label">Code Repositories</span>
+                  <span class="contact-method-val">
+                    <a href="https://github.com/sobur-khan" target="_blank" rel="noopener noreferrer">github.com/sobur-khan</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Validated Contact Form -->
+          <div class="contact-form-card reveal-on-scroll delay-1">
+            <form id="contact-form" novalidate aria-label="Contact Sobur Khan">
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  <span>Full Name</span>
+                  <span style="color: var(--accent-alert);">*</span>
+                </label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g., Professor Rahman or John Doe" required autocomplete="name">
+                <span class="form-error-msg" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  <span>Email Address</span>
+                  <span style="color: var(--accent-alert);">*</span>
+                </label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g., yourname@domain.com" required autocomplete="email">
+                <span class="form-error-msg" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">
+                  <span>Subject</span>
+                  <span style="color: var(--accent-alert);">*</span>
+                </label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g., SE235 Coursework Discussion / Internship Inquiry" required>
+                <span class="form-error-msg" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <div class="form-label">
+                  <span>Message</span>
+                  <span class="form-char-count" id="message-char-counter">0 / 500</span>
+                </div>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message or inquiry here..." maxlength="500" required></textarea>
+                <span class="form-error-msg" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+
+              <!-- Real-time Status Alert -->
+              <div class="form-status-alert" id="contact-status-alert" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SITE FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-monogram" style="width: 36px; height: 36px; font-size: 0.95rem;">SK</div>
+          <span style="font-family: var(--font-heading); font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">
+            A.K.M.A. Sobur Khan
+          </span>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+            B.Sc. in Software Engineering • Daffodil International University
+          </span>
+        </div>
+
+        <nav aria-label="Footer Quick Links">
+          <ul style="display: flex; flex-wrap: wrap; gap: 1.25rem;">
+            <li><a href="#about" class="nav-link" style="font-size: 0.85rem;">About</a></li>
+            <li><a href="#skills" class="nav-link" style="font-size: 0.85rem;">Skills</a></li>
+            <li><a href="#academics" class="nav-link" style="font-size: 0.85rem;">Academics</a></li>
+            <li><a href="#projects" class="nav-link" style="font-size: 0.85rem;">Projects</a></li>
+            <li><a href="#experience" class="nav-link" style="font-size: 0.85rem;">Experience</a></li>
+            <li><a href="#achievements" class="nav-link" style="font-size: 0.85rem;">Achievements</a></li>
+            <li><a href="#contact" class="nav-link" style="font-size: 0.85rem;">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 A.K.M.A. Sobur Khan. Crafted for <strong>SE235: Desktop &amp; Web Programming</strong>.
+        </div>
+        <div>
+          Pure HTML5 • CSS3 Custom Tokens • Vanilla ES6+ • Zero Frameworks
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODAL 1: PROJECT CASE STUDY DETAIL DIALOG
+       ==================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
+    <div class="modal-container" id="modal-dynamic-content">
+      <!-- Injected dynamically by ProjectsManager in main.js -->
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2: CURRICULUM VITAE (CV) PREVIEW DIALOG
+       ==================================================================== -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="resume-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">ACADEMIC &amp; TECHNICAL RESUME</span>
+          <h2 class="modal-title" id="resume-modal-title">Curriculum Vitae Preview</h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="resume-close-btn" aria-label="Close resume preview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" style="font-family: var(--font-body); font-size: 0.95rem;">
+        <div style="border-bottom: 2px solid var(--accent-primary); padding-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.2rem;">A.K.M.A. SOBUR KHAN</h3>
+            <p style="margin: 0; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-primary);">
+              Undergraduate Software Engineer • Daffodil International University
+            </p>
+          </div>
+          <div style="font-size: 0.825rem; font-family: var(--font-mono); text-align: right;">
+            <div>Dhaka, Bangladesh</div>
+            <div>soburkhan.swe@gmail.com</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 0.4rem; font-family: var(--font-mono);">
+            1. EDUCATION
+          </h4>
+          <p style="margin-bottom: 0.25rem;">
+            <strong>B.Sc. in Software Engineering</strong> — Daffodil International University (2023 – Present)<br>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Faculty of Science and Information Technology | Relevant: SE235 Desktop &amp; Web Prog, DSA, OOP, DBMS</span>
+          </p>
+          <p style="margin: 0; font-size: 0.875rem;">
+            <strong>National Board Examinations:</strong> H.S.C (GPA 5.00), S.S.C (GPA 5.00), J.S.C (GPA 5.00), P.S.C (GPA 5.00)
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 0.4rem; font-family: var(--font-mono);">
+            2. TECHNICAL COMPETENCIES
+          </h4>
+          <ul class="timeline-bullets" style="margin: 0;">
+            <li><strong>Languages:</strong> C, C++, JavaScript (ES6+), Python, SQL (MySQL)</li>
+            <li><strong>Web Engineering:</strong> Semantic HTML5, CSS3 (Grid, Flexbox, Variables), DOM Scripting, Fetch API</li>
+            <li><strong>Developer Tools:</strong> Git &amp; GitHub, VS Code, Linux/Bash, Chrome DevTools</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 0.4rem; font-family: var(--font-mono);">
+            3. KEY PROJECT HIGHLIGHTS
+          </h4>
+          <ul class="timeline-bullets" style="margin: 0;">
+            <li><strong>DIU Campus Room &amp; Lab Scheduler:</strong> Interactive conflict-free timetable utility built with pure HTML5, CSS Grid, and vanilla JS.</li>
+            <li><strong>DIU CGPA &amp; Academic Credit Forecaster:</strong> Fast client-side grade forecaster and semester credit planner with printable reports.</li>
+            <li><strong>DevNotes Code Snippet Catalog:</strong> Lightweight offline-first syntax notebook with keyboard shortcuts and clipboard integration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="assets/resume.txt" download="A_K_M_A_Sobur_Khan_Resume.txt" class="btn btn-secondary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Text CV
+        </a>
+        <button type="button" class="btn btn-primary btn-sm" id="resume-print-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Vanilla JavaScript Application -->
+  <script src="js/main.js"></script>
+</body>
+</html>
